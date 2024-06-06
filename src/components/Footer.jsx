@@ -1,4 +1,3 @@
-import React from 'react';
 import {footerLinks} from "../constants/index.js";
 
 const Footer = () => {
@@ -27,20 +26,19 @@ const Footer = () => {
                     <p className="font-semibold text-gray text-xs">
                         Copyright @ 2024 Apple Inc. All rights reserved.
                     </p>
-                    <ul className="flex">
+                    <div className="flex">
                         {footerLinks.map((link, i) => (
-                            <li key={link} className="font-semibold text-gray text-xs">
-                                {link}{" "}
+                            <p key={link} className="font-semibold text-gray text-xs">
+                                {" "}{link}
                                 {i !== footerLinks.length -1 && (
-                                    <span className="mx-2">
-                                        |
+                                    <span className="sm:mx-2 mx-0">
+                                       {" "} |
                                     </span>
                                 )}
-                            </li>
+                            </p>
                         ))}
-                    </ul>
+                    </div>
                 </div>
-
             </div>
         </footer>
     );

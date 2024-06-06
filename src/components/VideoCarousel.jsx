@@ -1,4 +1,4 @@
-import React, {useEffect, useRef, useState} from 'react';
+import {useEffect, useRef, useState} from 'react';
 import {hightlightsSlides} from "../constants/index.js";
 import {pauseImg, playImg, replayImg} from "../utils/index.js";
 import {useGSAP} from "@gsap/react";
