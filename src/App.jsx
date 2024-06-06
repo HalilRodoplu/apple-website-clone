@@ -5,6 +5,7 @@ import Model from "./components/Model.jsx";
 import Features from "./components/Features.jsx";
 import Footer from "./components/Footer.jsx";
 import HowItWorks from "./components/HowItWorks.jsx";
+import Camera from "./components/Camera.jsx";
 
 const App = () => {
 
@@ -16,6 +17,7 @@ const App = () => {
           <Model/>
           <Features/>
           <HowItWorks/>
+          <Camera/>
           <Footer/>
       </main>
   )
